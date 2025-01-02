@@ -8,7 +8,7 @@ class TuneModel {
  const TuneModel({required this.sound, required this.color});
    playSound(){
       final player = AudioPlayer();
-        player.setSource(AssetSource(sound));
+        player.play(AssetSource(sound));
   }
 
 }
